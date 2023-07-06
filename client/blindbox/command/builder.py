@@ -32,7 +32,7 @@ def error_exit(text, **kwargs):
     exit(1)
 
 
-IPModel = pydantic.constr(pattern="^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
+IPModel = pydantic.constr(regex="^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
 
 
 class BlindBoxYml(BaseModel):
